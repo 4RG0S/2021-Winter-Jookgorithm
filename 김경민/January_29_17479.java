@@ -71,6 +71,7 @@ public class January_29_17479 {
                 spe = true;
             }
         }
+        
         System.out.println(result ? "Okay" : "No");
     }
 }
