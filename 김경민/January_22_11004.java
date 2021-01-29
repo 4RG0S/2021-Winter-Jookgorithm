@@ -1,4 +1,3 @@
-package January;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -20,6 +19,7 @@ public class January_22_11004 {
 		}
 		Arrays.sort(arr);
 		System.out.println(arr[K-1]);
+		scan.close();
 	}
 
 }
