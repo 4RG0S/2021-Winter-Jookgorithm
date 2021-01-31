@@ -1,4 +1,3 @@
-package January;
 
 import java.util.Scanner;
 
@@ -24,6 +23,7 @@ public class January_14_1292 {
 			sum += arr[i];
 		}
 		System.out.println(sum);
+		scan.close();
 	}
 
 }

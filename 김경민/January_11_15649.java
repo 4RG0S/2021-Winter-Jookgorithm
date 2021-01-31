@@ -1,4 +1,3 @@
-package January;
 
 import java.util.Scanner;
 import java.util.Stack;
@@ -35,6 +34,7 @@ public class January_11_15649 {
 		used = new boolean[N+1];
 		
 		combi(N, M, 0, new Stack<Integer>());
+		scan.close();
 	}
 
 }
