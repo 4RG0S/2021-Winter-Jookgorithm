@@ -1,4 +1,3 @@
-package January;
 
 import java.util.Scanner;
 
@@ -19,6 +18,7 @@ public class January_15_3036 {
 			}
 			System.out.println(num/gcd + "/" + arr[i]/gcd);
 		}
+		scan.close();
 		
 	}
 
