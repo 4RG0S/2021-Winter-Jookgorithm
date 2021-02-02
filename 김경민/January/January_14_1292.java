@@ -1,3 +1,4 @@
+package January;
 
 import java.util.Scanner;
 
@@ -11,15 +12,15 @@ public class January_14_1292 {
 		int arr[] = new int[1000];
 		int index = 1;
 		int count = index;
-		for(int i=0;i<1000;i++) {
+		for (int i = 0; i < 1000; i++) {
 			arr[i] = index;
 			count--;
-			if(count == 0)
+			if (count == 0)
 				count = ++index;
 		}
-		
+
 		int sum = 0;
-		for(int i=from-1;i<=to-1;i++) {
+		for (int i = from - 1; i <= to - 1; i++) {
 			sum += arr[i];
 		}
 		System.out.println(sum);

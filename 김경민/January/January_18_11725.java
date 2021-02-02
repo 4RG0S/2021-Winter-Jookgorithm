@@ -1,3 +1,4 @@
+package January;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,7 +8,7 @@ import java.util.List;
 import java.util.StringTokenizer;
 
 public class January_18_11725 {
-	
+
 	static List<List<Integer>> list = new ArrayList<>();
 	static int parents[];
 	static boolean visit[];
@@ -31,10 +32,10 @@ public class January_18_11725 {
 		for(int i=0;i<N+1;i++) {
 			list.add(new ArrayList<>());
 		}
-		
+
 		for(int i=0;i<N-1;i++) {
 			StringTokenizer line = new StringTokenizer(br.readLine(), " ");
-			
+
 			int from = Integer.parseInt(line.nextToken());
 			int to = Integer.parseInt(line.nextToken());
 			list.get(from).add(to);

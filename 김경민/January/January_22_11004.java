@@ -1,3 +1,4 @@
+package January;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -13,12 +14,12 @@ public class January_22_11004 {
 		int arr[] = new int[N];
 		scan.nextLine();
 		StringTokenizer line = new StringTokenizer(scan.nextLine(), " ");
-		
-		for(int i=0;i<N;i++) {
+
+		for (int i = 0; i < N; i++) {
 			arr[i] = Integer.parseInt(line.nextToken());
 		}
 		Arrays.sort(arr);
-		System.out.println(arr[K-1]);
+		System.out.println(arr[K - 1]);
 		scan.close();
 	}
 

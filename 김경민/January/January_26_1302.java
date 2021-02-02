@@ -1,3 +1,4 @@
+package January;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -13,21 +14,20 @@ public class January_26_1302 {
 		HashMap<Integer, String> result = new HashMap<>();
 		int largest = 0;
 		int N = Integer.parseInt(br.readLine());
-		for(int i=0;i<N;i++) {
+		for (int i = 0; i < N; i++) {
 			String line = br.readLine();
 			int key;
-			if(map.containsKey(line)) {
+			if (map.containsKey(line)) {
 				map.put(line, map.get(line) + 1);
 				key = map.get(line);
-			}
-			else {
+			} else {
 				map.put(line, 1);
 				key = map.get(line);
 			}
-			if(result.containsKey(key) && result.get(key).compareTo(line) > 0) {
+			if (result.containsKey(key) && result.get(key).compareTo(line) > 0) {
 				result.put(key, line);
 				largest = (largest < key) ? key : largest;
-			} else if(!result.containsKey(key)) {
+			} else if (!result.containsKey(key)) {
 				result.put(key, line);
 				largest = (largest < key) ? key : largest;
 			}
