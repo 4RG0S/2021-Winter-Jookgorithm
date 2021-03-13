@@ -20,5 +20,6 @@ public class March_08_1351 {
     map = new HashMap<>();
     map.put((long)0, (long)1);
     System.out.println(dp(N, P, Q));
+    scan.close();
   }
 }
